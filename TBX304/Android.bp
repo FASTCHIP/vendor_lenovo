@@ -21,6 +21,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
 	name: "libts_detected_face_hal",
+	shared_libs: ["libc", "libdl", "liblog", "libm", "libstdc++"],
 	owner: "lenovo",
 	strip: {
 		none: true,
@@ -37,6 +38,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libts_face_beautify_hal",
+	shared_libs: ["libEGL", "libGLESv2", "libc", "libdl", "liblog", "libm", "libstdc++"],
 	owner: "lenovo",
 	strip: {
 		none: true,
